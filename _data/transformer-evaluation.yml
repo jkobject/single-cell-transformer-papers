@@ -1,0 +1,193 @@
+- paper:
+    type: peer_reviewed
+    text: '[Csendes et al. 2024](https://bmcgenomics.biomedcentral.com/articles/10.1186/s12864-025-11600-2)'
+    url: https://bmcgenomics.biomedcentral.com/articles/10.1186/s12864-025-11600-2
+  code:
+    type: reproducible
+    text: "[ð\x9F\x9B\_ï¸\x8FGitHub](https://github.com/turbine-ai/PerturbSeqPredBenchmark)"
+    url: https://github.com/turbine-ai/PerturbSeqPredBenchmark
+  omic_modalities: scRNA-seq
+  evaluated_transformers: scGPT, scFoundation
+  tasks: Genetic perturbation effect prediction
+  notes: Simple baseline models can outperform scGPT on perturbational downstream tasks. The most widely used benchmarking datasets contain significant biases, making them suboptimal for evaluation.
+
+- paper:
+    type: preprint
+    text: '[Kaspar Märtens et al. 2024](https://openreview.net/pdf?id=eb3ndUlkt4)'
+    url: https://openreview.net/pdf?id=eb3ndUlkt4
+  code:
+    type: 'reproducible'
+    text: '[ð\x9F\x9B\_ï¸\x8FGitHub](https://github.com/valence-labs/Tx-Evaluation)'
+    url: 'https://github.com/valence-labs/Tx-Evaluation'
+  omic_modalities: '-'
+  evaluated_transformers: '-'
+  tasks: '-'
+  notes: '-'
+
+
+
+- paper:
+    type: preprint
+    text: '[Ihab Bendidi et al. 2024](https://arxiv.org/pdf/2410.13956)'
+    url: https://arxiv.org/pdf/2410.13956
+  code:
+    type: 'reproducible'
+    text: '[ð\x9F\x9B\_ï¸\x8FGitHub](https://github.com/valence-labs/Tx-Evaluation)'
+    url: 'https://github.com/valence-labs/Tx-Evaluation'
+  omic_modalities: '-'
+  evaluated_transformers: '-'
+  tasks: '-'
+  notes: '-'
+
+- paper:
+    type: preprint
+    text: '[George Crowley et al. 2024](https://www.biorxiv.org/content/10.1101/2024.10.10.617605v1.full.pdf)'
+    url: https://www.biorxiv.org/content/10.1101/2024.10.10.617605v1.full.pdf
+  code:
+    type: 'reproducible'
+    text: '[ð\x9F\x9B\_ï¸\x8FGitHub](https://github.com/ggit12/anndictionary/)'
+    url: 'https://github.com/ggit12/anndictionary/'
+  omic_modalities: '-'
+  evaluated_transformers: '-'
+  tasks: '-'
+  notes: '-'
+
+
+- paper:
+    type: preprint
+    text: '[Yan Wu et al. 2024](https://scholar.google.com/scholar?cluster=18315006149844520972&hl=en&as_sdt=0,5)'
+    url: https://scholar.google.com/scholar?cluster=18315006149844520972&hl=en&as_sdt=0,5
+  code:
+    type: 'reproducible'
+    text: '[ð\x9F\x9B\_ï¸\x8FGitHub](https://github.com/altoslabs/perturbench)'
+    url: 'https://github.com/altoslabs/perturbench'
+  omic_modalities: '-'
+  evaluated_transformers: '-'
+  tasks: '-'
+  notes: '-'
+
+- paper:
+    type: preprint
+    text: '[A. Wenteler et al. 2024](https://www.biorxiv.org/content/10.1101/2024.10.02.616248v1.abstract)'
+    url: https://www.biorxiv.org/content/10.1101/2024.10.02.616248v1.abstract
+  code:
+    type: 'reproducible'
+    text: '[ð\x9F\x9B\_ï¸\x8FGitHub](https://github.com/aaronwtr/PertEval)'
+    url: 'https://github.com/aaronwtr/PertEval'
+  omic_modalities: 'scRNA-seq'
+  evaluated_transformers: 'UCE, scBERT, scGPT, Geneformer, scFoundation'
+  tasks: 'Transcriptomic perturbation prediction'
+  notes: 'Introduces PertEval-scFM, a benchmark to assess the zero-shot utility of single-cell foundation model embeddings for transcriptomic perturbation prediction. Uses SPECTRA to generate train-test splits with increasing dissimilarity to evaluate robustness against distribution shift. Models are evaluated with MSE and AUSPC, with AUSPC reflecting robustness under distribution shift. Additional analyses include E-distance and predicted transcriptomic distributions across the top 20 DEGs. Findings suggest that single-cell foundation model embeddings capture average perturbation effects but generally lack robustness to distribution shift. Ongoing work demonstrates that the domain-specific model GEARS outperforms foundation model embeddings, indicating that masked-language modeling on gene expression data without domain-specific inductive biases is insufficient for accurate transcriptomic perturbation prediction.'
+
+
+
+- paper:
+    type: preprint
+    text: '[Eric Kernfeld et al. 2024](https://www.biorxiv.org/content/10.1101/2023.07.28.551039v2.full)'
+    url: https://www.biorxiv.org/content/10.1101/2023.07.28.551039v2.full
+  code:
+    type: 'reproducible'
+    text: '[ð\x9F\x9B\_ï¸\x8FGitHub](https://github.com/ekernf01/perturbation_benchmarking)'
+    url: 'https://github.com/ekernf01/perturbation_benchmarking'
+  omic_modalities: '-'
+  evaluated_transformers: '-'
+  tasks: '-'
+  notes: '-'
+
+
+- paper:
+    type: preprint
+    text: '[Yoav Kan-Tor et al. 2024](https://arxiv.org/abs/2412.04075)'
+    url: https://arxiv.org/abs/2412.04075
+  code:
+    type: reproducible
+    text: "[ð\x9F\x9B\_ï¸\x8FGitHub](https://github.com/BiomedSciAI/gene-benchmark)"
+    url: https://github.com/BiomedSciAI/gene-benchmark
+  omic_modalities: Natural Language, scRNAseq, protein sequence, DNA sequence
+  evaluated_transformers: Mistral, MPnet, CellPLM, GeneFormer, scGPT, DNABert2, ESM (plus bag-of-words, gene2vec)
+  tasks: genomic properties, gene regulatory functions, gene localization, gene biological processes, protein properties
+  notes: 'Evaluating model performance using gene embeddings allows comparing models utilizing different data modalities. The performance profile of a diverse set of models across ~300 gene related tasks was shown to be most influenced by the training modality.'
+- paper:
+    type: preprint
+    text: '[Ahlmann-Eltze et al. 2024](https://www.biorxiv.org/content/10.1101/2024.09.16.613342)'
+    url: https://www.biorxiv.org/content/10.1101/2024.09.16.613342
+  code:
+    type: reproducible
+    text: "[ð\x9F\x9B\_ï¸\x8FGitHub](https://github.com/const-ae/linear_perturbation_prediction-Paper/)"
+    url: https://github.com/const-ae/linear_perturbation_prediction-Paper/
+  omic_modalities: scRNA-seq
+  evaluated_transformers: scGPT, scFoundation
+  tasks: Genetic perturbation effect prediction
+  notes: A simple linear model performs better than scGPT and scFoundation (and GEARS).
+- paper:
+    type: preprint
+    text: '[He et al. 2024](https://www.biorxiv.org/content/10.1101/2024.01.27.577455v1)'
+    url: https://www.biorxiv.org/content/10.1101/2024.01.27.577455v1
+  code:
+    type: reproducible
+    text: "[ð\x9F\x9B\_ï¸\x8FGitHub](https://github.com/laolintou/scPEFT)"
+    url: https://github.com/laolintou/scPEFT
+  omic_modalities: scRNA-seq
+  evaluated_transformers: scGPT
+  tasks: Cell type annotation
+  notes: Evaluation of Parameter-Efficient Fine-Tuning (PEFT) for scGPT. Indicates that PEFT not only is more compute-efficient, but also results in better cell type prediction.
+- paper:
+    type: peer_reviewed
+    text: '[Khan et al. 2023](https://www.nature.com/articles/s42256-023-00757-8)'
+    url: https://www.nature.com/articles/s42256-023-00757-8
+  code:
+    type: reproducible
+    text: "[ð\x9F\x9B\_ï¸\x8FGitHub](https://github.com/TranslationalBioinformaticsUnit/scbert-reusability)"
+    url: https://github.com/TranslationalBioinformaticsUnit/scbert-reusability
+  omic_modalities: scRNA-seq
+  evaluated_transformers: scBERT
+  tasks: Cell type annotation. Unseen cell type detection
+  notes: Focused on imbalanced cell type classification. scBERT is sensitive to class imbalance. scBERT outperforms Seurat. scBERT doesn't perform well in unseen cell type detection. It benefits from SSL pretraining.
+- paper:
+    type: preprint
+    text: '[Liu et al. 2023](https://www.biorxiv.org/content/10.1101/2023.09.08.555192v4)'
+    url: https://www.biorxiv.org/content/10.1101/2023.09.08.555192v4
+  code:
+    type: reproducible
+    text: "[ð\x9F\x9B\_ï¸\x8FGitHub](https://github.com/HelloWorldLTY/scEval)"
+    url: https://github.com/HelloWorldLTY/scEval
+  omic_modalities: scRNA-seq, scATAC-seq, Spatial transcriptomics
+  evaluated_transformers: scGPT, Geneformer, scBERT, tGPT, CellLM
+  tasks: Cell clustering, cell type annotation, multimodal embedding, GRN inference, gene expression imputation, genetic perturbation effect prediction, simulation, gene function prediction
+  notes: Models aren't trained on the same datasets. scGPT is positioned as most versatile in terms of task diversity that it can tackle. Models other than transformer appear to be at least as good as transformers in most tasks. Transformers were shown to be sensitive to the choice of hyperparameters, such as learning rate and epochs.
+- paper:
+    type: preprint
+    text: '[Boiarsky et al. 2023](https://www.biorxiv.org/content/10.1101/2023.10.19.563100v1)'
+    url: https://www.biorxiv.org/content/10.1101/2023.10.19.563100v1
+  code:
+    type: reproducible
+    text: "[ð\x9F\x9B\_ï¸\x8FGitHub](https://github.com/clinicalml/sc-foundation-eval)"
+    url: https://github.com/clinicalml/sc-foundation-eval
+  omic_modalities: scRNA-seq
+  evaluated_transformers: scBERT, scGPT
+  tasks: Cell type annotation
+  notes: Logistic regression appears to be as good as transformers in cell type annotation, even in low-data scenarios.
+- paper:
+    type: preprint
+    text: '[Kedzierska et al. 2023](https://www.biorxiv.org/content/10.1101/2023.10.16.561085v2)'
+    url: https://www.biorxiv.org/content/10.1101/2023.10.16.561085v2
+  code:
+    type: reproducible
+    text: "[ð\x9F\x9B\_ï¸\x8FGitHub](https://github.com/microsoft/zero-shot-scfoundation)"
+    url: https://github.com/microsoft/zero-shot-scfoundation
+  omic_modalities: scRNA-seq
+  evaluated_transformers: scGPT, Geneformer
+  tasks: Cell clustering
+  notes: Zero-shot performance only. Both models appear unreliable.
+- paper:
+    type: preprint
+    text: '[Alsabbagh et al. 2023](https://www.biorxiv.org/content/10.1101/2023.10.24.563625v1)'
+    url: https://www.biorxiv.org/content/10.1101/2023.10.24.563625v1
+  code:
+    type: reproducible
+    text: "[ð\x9F\x9B\_ï¸\x8FGitHub](https://github.com/SabbaghCodes/ImbalancedLearningForSingleCellFoundationModels)"
+    url: https://github.com/SabbaghCodes/ImbalancedLearningForSingleCellFoundationModels
+  omic_modalities: scRNA-seq
+  evaluated_transformers: scGPT, Geneformer, scBERT
+  tasks: Cell type annotation
+  notes: Focused on imbalanced cell type classification. Geneformer appears to be outperformed by scGPT and scBERT, where the two latter perform similarly.
